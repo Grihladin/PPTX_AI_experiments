@@ -118,6 +118,7 @@ This is a prototype. The gap for improvement is massive:
 - **Custom figures and tables** -- pptxgenjs supports charts, complex tables, and shape compositions that are not yet used here. A richer theme could offer these as ready-made helpers.
 - **Better theme reliability** -- the current theme is minimal. A more robust design system with stricter layout rules would produce more consistent output across different AI models.
 - **Deterministic positioning tools** -- AI models struggle with placing text and objects at precise coordinates on slides. A purpose-built tool that handles positioning deterministically (snap-to-grid, auto-layout, overflow detection) would make the output significantly more reliable. This is probably the biggest win and something I may develop.
+- **AI agent harness** -- the final step would be to build a proper agent harness on top of [Pi Agent](https://github.com/microsoft/pi-agent) that orchestrates all of the above tools in a defined way -- planning, slide creation, editing, verification -- as composable tool calls instead of one-shot generation. Wrap that in an Electron shell (no need to build one from scratch -- plenty of open-source Electron boilerplates exist that just need a bit of tweaking) and it becomes a desktop app anyone can use without touching a terminal. That is the point where this stops being a prototype and becomes a real product.
 
 If any of this interests you -- ideas, feedback, contributions -- reach out: **grihladin@gmail.com**
 
